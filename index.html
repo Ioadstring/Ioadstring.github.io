@@ -1,73 +1,30 @@
 <html>
-<style>
-@keyframes caret {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-    
-body {
-	margin: 0;
-	padding: 0;
-	background-color: black;
-	overflow: hidden;
-	font-family: "Brandon Light";
-	color: white;
-	user-select: none;
-	opacity: 0;
-    transition: opacity 2s;
-    -webkit-transition: opacity 5s; /* Safari */
-}
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: black;
+			overflow: hidden;
+			font-family: "Brandon Light";
+			color: white;
+			user-select: none;
+			opacity: 0;
+    			transition: opacity 2s;
+    			-webkit-transition: opacity 5s; /* Safari */
+			}
 
-a {
-	color: white;
-	text-decoration: none;
-	padding: 0;
-}
-
-.center {
-	position: absolute;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+			.center {
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			}
+	</style>
 	
-}
-
-#border {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
-	pointer-events: none;
-	z-index: -1;
-}
-
-
-#borderTop, #borderBottom {
-	position: absolute;
-	width: 0%;
-	height: 4px;
-	background-color: purple;
-}
-
-#borderRight, #borderLeft {
-	position: absolute;
-	width: 3px;
-	height: 0%;
-	background-color: purple;
-}
-</style>
-	
-<body onload="document.body.style.opacity='1'">
-<div class="center">
-<pre>      
-hello
-<span style="font-weight: bold;text-shadow: 0 0 5px #ffffff90;">,,,#0001 - developer</span>
-</pre>
-</div>
+	<body onload="document.body.style.opacity='1'">
+		<div class="center">
+			hello
+		</div>
+	</body>
 </html>
