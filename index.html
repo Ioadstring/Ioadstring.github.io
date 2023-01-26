@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<style>
+			
 			body {
 				margin: 0;
 				padding: 0;
@@ -12,19 +13,34 @@
 				opacity: 0;
     				transition: opacity 2s;
     				-webkit-transition: opacity 5s; /* Safari */
-				}
+			}
 
-				.center {
+			.center {
 				position: absolute;
 				text-align: center;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				}
+			}
+			
+			pre {
+    				-webkit-animation: fadein 2s;
+				font-weight: bold;
+				font-size: 16px;
+				user-select: none;
+				color: purple;
+				background: repeating-linear-gradient(120deg, #FFA500 0%, #DB7093 40%, #FFA500 60%);
+				background-size: 60vw 60vw;
+				-webkit-text-fill-color: transparent;
+				-webkit-background-clip: text;
+				animation: slide 5s linear infinite forwards;
+			}
+			
 		</style>
 	</head>
 	
 	<body onload="document.body.style.opacity='1'">
+		<pre>
 		<div class="center">
 			hello i'm loadstring / doordash
 			<br>↓ current project ↓
@@ -51,5 +67,6 @@
 			<br>clan name,
 			<br>clan xp
 		</div>
+		</pre>
 	</body>
 </html>
