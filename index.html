@@ -108,26 +108,7 @@ $('#cursor').teletype({
   pause: 500
 });
 </script>
-    
-    
-    <script>
-    
-    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
-    if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
-    function mischandler(){
-    return false;
-    }
-    function mousehandler(e){
-    var myevent = (isNS) ? e : event;
-    var eventbutton = (isNS) ? myevent.which : myevent.button;
-    if((eventbutton==2)||(eventbutton==3)) return false;
-    }
-    document.oncontextmenu = mischandler;
-    document.onmousedown = mousehandler;
-    document.onmouseup = mousehandler;
-    </script>
-    
-    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js'></script>
+
         
     <title>ballz.solutions</title>
     <meta charset="UTF-8">
